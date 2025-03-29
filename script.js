@@ -1,9 +1,10 @@
 // Hello Module
 var helloSpeaker = (function () {
     var speakWord = "Hello";
-    
+
     function speak(name) {
-        console.log(speakWord + " " + name);
+        var message = speakWord + " " + name;
+        document.write(message + "<br>");  // Display on webpage
     }
 
     return {
@@ -16,7 +17,8 @@ var goodbyeSpeaker = (function () {
     var speakWord = "Goodbye";
 
     function speak(name) {
-        console.log(speakWord + " " + name);
+        var message = speakWord + " " + name;
+        document.write(message + "<br>");  // Display on webpage
     }
 
     return {
